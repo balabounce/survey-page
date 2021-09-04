@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1 id="title">
+            freeCodeCamp Survey Form 
+        </h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>       
+    </div>
+    <main id='main'>
+        <section class="form-section">
+            <div class="container">
+                <form action="" method="POST" id="survey-form">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="number" min="18" max="56" placeholder="Enter your age" required>
+
+                    <div class="dropdown-container">
+                        <p>Which option best describes your current role?</p>
+                        <select name="dropdown" id="dropdown" required>
+                            <option value="1" selected disabled>Select current role</option>
+                            <option value="2">Student</option>
+                            <option value="3">Full Time Job</option>
+                            <option value="4">Full Time Learner</option>
+                            <option value="5">Prefer not to say</option>
+                            <option value="6">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="radio-container">
+                        <p>Would you recommend freeCodeCamp to friends?</p>
+                        <label for="radio1"><input type="radio" id="radio1" name="recommend-to-friend" value="1">Definitely</label>
+                        <label for="radio2"><input type="radio" id="radio2" name="recommend-to-friend" value="2">Maybe</label>
+                        <label for="radio3"><input type="radio" id="radio3" name="recommend-to-friend" value="3">Not sure</label>
+                    </div>
+
+                    <div class="dropdown-feature-container">
+                        <p for="dropdown-feature">Which option best describes your current role?</p>
+                        <select name="dropdown-feature" id="dropdown-feature" required>
+                            <option value="1" selected disabled>Select an option</option>
+                            <option value="2">Challenges</option>
+                            <option value="3">Projects</option>
+                            <option value="4">Community</option>
+                            <option value="5">Open Source</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <p>What would you like to see improved? <i>(Check all that apply)</i></p>
+                        <label for="frontend"><input type="checkbox" id="frontend" name="frontend" value="frontend">Front-end Projects</label>
+                        <label for="backend"><input type="checkbox" id="backend" name="backend" value="backend">Back-end Projects</label>
+                        <label for="datavis"><input type="checkbox" id="datavis" name="datavis" value="datavis">Data Visualization</label>
+                        <label for="challenges"><input type="checkbox" id="challenges" name="challenges" value="challenges">Challenges</label>
+                        <label for="opensource"><input type="checkbox" id="opensource" name="opensource" value="opensource">Open Source Community</label>
+                        <label for="gitter"><input type="checkbox" id="gitter" name="gitter" value="gitter">Gitter help rooms</label>
+                        <label for="videos"><input type="checkbox" id="videos" name="videos" value="videos">Videos</label>
+                        <label for="meetups"><input type="checkbox" id="meetups" name="meetups" value="meetups">City Meetups</label>
+                        <label for="wiki"><input type="checkbox" id="wiki" name="wiki" value="wiki">Wiki</label>
+                        <label for="forum"><input type="checkbox" id="forum" name="forum" value="forum">Forum</label>
+                        <label for="additcourses"><input type="checkbox" id="additcourses" name="additcourses" value="additcourses">Additional Courses</label>
+                    </div>
+                    <div class="comments">
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="comment" id="comment" cols="90" rows="10"></textarea>
+                    </div>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
